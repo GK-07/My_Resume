@@ -1,0 +1,229 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{tfrupee}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+ \vspace{-1pt}
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.05in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}\vspace{2pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Gaurav Galiyawala} \\ \vspace{1pt}
+    \href{mailto:x@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{galiyawalagaurav@gmail.com}} ~ 
+    \href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/gaurav-galiyawala-89b079214}}  ~
+    \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/GK-07}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {M.T. Jariwala High School}{Surat, Gujarat}
+      {Secondary School  \textbf{75.16\%}}{June 2015 -- March 2016}
+    \resumeSubheading
+       {M.T. Jariwala High School}{Surat, Gujarat}
+      {Secondary School  \textbf{79.86\%}}{June 2017 -- March 2018}
+    \resumeSubheading
+       {C.B. Patel Computer College}{Surat, Gujarat}
+      {Bachelor of Computer Application  \textbf{8.85 CGPA}}{June 2018 -- June 2021}
+    \resumeSubheading
+       {MIT World Peace University}{Pune, Maharashtra}
+      {Master of Computer Application  \textbf{9.54 CGPA}}{August 2021 -- May 2023}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Product Engineer (Full Stack)}{January 2023 -- June 2023}
+      {vInnovate Technologies LLC}{Lonavala, Maharashtra}
+      \resumeItemListStart
+        \resumeItem{Collaborated with a cross-functional team to define and refine project requirements, ensuring clear objectives.}
+        \resumeItem{Developed backend logic and APIs using Laravel. Created responsive user interfaces and frontend components using React, HTML, and CSS. Implemented database models and migrations with Laravel's Eloquent ORM.}
+        \resumeItem{ Utilized Git for version control and participated in code reviews with team members.}
+         \resumeItem{Wrote and maintained server-side code and API endpoints using Node.js and Express.js.}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Doccure} $|$ \emph{Bootstrap, CodeIgniter, CKEditor, MySQL, InstaMojo, Vonage(Vide Call)}}{April 2021}
+          \resumeItemListStart
+            \resumeItem{Facilitates virtual consultations, connecting patients with healthcare professionals.}
+            \resumeItem{Streamlines the diagnostic process by enabling prescription uploads and report generation through integrated laboratories.Improves healthcare accessibility and convenience for users.}
+          \resumeItemListEnd
+          \resumeProjectHeading
+          {\textbf{Hospital Management System} $|$ \emph{ASP.NET, C\#, MS SQL Server}}{March 2022}
+          \resumeItemListStart
+            \resumeItem{Developed a Hospital Management System to streamline patient care, appointment handling, billing, and resource management.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{BioMedic} $|$ \emph{Flutter, Firebase, Android, Stripe}}{November 2022}
+          \resumeItemListStart
+            \resumeItem{Established an online platform for the purchase of medical products, medications, and healthcare supplies.}
+            \resumeItem{Integrated a secure payment gateway to facilitate hassle-free online transactions.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{Facepedia} $|$ \emph{React, Express.js, Node.js, Mongoose, MongoDB}}{July 2023}
+          \resumeItemListStart
+            \resumeItem{Engineered a dynamic social media platform using the MERN stack, incorporating essential libraries such as Multer for file handling, Morgan for logging, Helmet for security, and Bcrypt for password encryption.}
+            \resumeItem{Implemented robust user authentication and authorization mechanisms to ensure data security and privacy.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{3D Tshirt Design} $|$ \emph{React, Express.js, Node.js, three.js}}{August 2023}
+          \resumeItemListStart
+            \resumeItem{Developed an interactive 3D T-shirt design platform using React, Node, Express, and Three.js.}
+            \resumeItem{Integrated OpenAI's DALL·E API, allowing users to generate unique T-shirt designs based on prompts, expanding creative options.}
+            \resumeItem{Provided an engaging and user-friendly experience for designing and visualizing custom T-shirts, leveraging advanced 3D modeling features.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Overall Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, SQL (MySQL, PL/SQL, MS SQL), JavaScript, HTML/CSS, C\#} \\
+     \textbf{Frameworks}{: React, Node.js, CodeIgniter, Laravel, Next.js, Express.js, Bootstrap} \\
+     \textbf{Developer Tools}{: Git, Docker,  VS Code, Visual Studio, Android Studio, AWS} \\
+     \textbf{Hobbies \& Soft Skills}{: Coding, Singing, Travelling, Leadership, Management, Communication}\\
+    }}
+\end{itemize}
+\section{Achievements \& Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Achievements}{: Scholarship \textbf{85,000\rupee  (MIT-WPU)}, IT Quiz Competition \textbf{(Symbiosis, S.D. Jain College)}, C++ Codezz Winner}\\
+     \textbf{Certifications \& Training}{: Core Java, React, Git, Unix, Docker, SQLServer by \textbf{IIHT}}\\
+    }}
+
+\end{itemize}
+ 
+
+
+%-------------------------------------------
+\end{document}
